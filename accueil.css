@@ -29,7 +29,7 @@ body{
 header{
 	height: 60px;
 	text-align: center;
-	background-color: #F7F7F1;
+	background-color: #F9FBF7;
 }
 header h1{
 	margin: 11px;
@@ -75,9 +75,9 @@ header h1{
 
 #selection{
 	height: 440px;
-	background-color: #F7F7F1;
+	background-color: #F9FBF7;
 }
-.fonctionnement h2{
+#selection h2{
 	margin: 0;
     padding: 50px 0px 0 20px;
 }
@@ -108,4 +108,9 @@ header h1{
 }
 .resto .fas{
 	color: #9356DC;
+}
+
+/* SECTION RESTAURANTS */
+#menu{
+	height: 1160px;
 }
