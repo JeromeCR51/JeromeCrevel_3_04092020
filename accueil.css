@@ -109,14 +109,6 @@ header h1{
 .resto .fas{
 	color: #9356DC;
 }
-.number1{
-	position: relative;
-}
-
-/* SECTION RESTAURANTS */
-#menu{
-	height: 1160px;
-}
 .number{
 	position: relative;
     border-radius: 50%;
@@ -124,3 +116,17 @@ header h1{
     left: -9px;
     padding: 2px 6px 2px 6px;
 }
+
+/* SECTION RESTAURANTS */
+#restaurants{	
+	height: 1160px;
+	background-color: #EEEEEE;
+}
+#restaurants h2{
+	margin: 0;
+    padding: 50px 0 0 20px;
+}
+.palette{
+	padding: 35px 0 0 20px;
+}
+
