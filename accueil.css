@@ -118,10 +118,9 @@ header h1{
 	height: 1160px;
 }
 .number{
-	width: 26px;
-    position: absolute;
-	text-align: center;
-	border-radius: 50%;
-	background-color: #9356DC;
-	left: 15px;
+	position: relative;
+    border-radius: 50%;
+    background-color: #9356DC;
+    left: -9px;
+    padding: 2px 6px 2px 6px;
 }
