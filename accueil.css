@@ -109,8 +109,19 @@ header h1{
 .resto .fas{
 	color: #9356DC;
 }
+.number1{
+	position: relative;
+}
 
 /* SECTION RESTAURANTS */
 #menu{
 	height: 1160px;
+}
+.number{
+	width: 26px;
+    position: absolute;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #9356DC;
+	left: 15px;
 }
