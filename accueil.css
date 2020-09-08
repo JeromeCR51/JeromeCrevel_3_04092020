@@ -129,6 +129,9 @@ header h1{
 .photo{
 	padding: 20px 0 0 20px;
 }
+.photoenchanted{
+	padding: 0 0 0 20px;
+}
 img{
 	border-radius: 15px 15px 0 0;
 }
@@ -145,5 +148,16 @@ img{
 .gras{
 	font-weight: bold;
 	font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+}
+.new{
+	font-weight: bold;
+    color: green;
+    font-size: 0.9em;
+    border-radius: 5px;
+    background-color: #99E2D0;
+    position: relative;
+    padding: 3px 20px 3px 20px;
+    top: 36px;
+    left: 67%;
 }
 
