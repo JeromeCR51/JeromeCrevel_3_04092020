@@ -21,7 +21,6 @@ body{
 	flex-direction: column;
 	width: 375px;
 	margin: auto;
-	border: solid 1px blue;
 	font-family: 'robotoregular', Arial, Helvetica, sans-serif;
 }
 
@@ -112,9 +111,10 @@ header h1{
 .number{
 	position: relative;
     border-radius: 50%;
+    color: #FFFFFF;
     background-color: #9356DC;
     left: -9px;
-    padding: 2px 6px 2px 6px;
+    padding: 3px 8px 4px 8px;
 }
 
 /* SECTION RESTAURANTS */
@@ -127,7 +127,7 @@ header h1{
     padding: 40px 0 0 20px;
 }
 .photo{
-	padding: 20px 0 0 20px;
+	padding: 5px 0 0 20px;
 }
 .photoenchanted{
 	padding: 0 0 0 20px;
@@ -135,7 +135,7 @@ header h1{
 img{
 	border-radius: 15px 15px 0 0;
 }
-.photo a{
+.photo a, .photoenchanted a{
 	background-color: #f9fbf7;
 }
 #restaurants p{
@@ -147,7 +147,6 @@ img{
 }
 .gras{
 	font-weight: bold;
-	font-family: 'robotoregular', Arial, Helvetica, sans-serif;
 }
 .new{
 	font-weight: bold;
@@ -160,4 +159,34 @@ img{
     top: 36px;
     left: 67%;
 }
+.far{
+    position: relative;
+    bottom: 16px;
+    left: 60%;
+    font-size: 20px;
+}
+.far:hover{
+    font-weight: bold;
+    color: #9356DC;
+}
 
+/* SECTION FOOTER */
+
+footer{
+    height: 200px;
+    background-color: #414141;
+    padding-left: 20px;
+    color: #FFFFFF;
+}
+footer h3{
+    font-family: 'Shrikhand', 'robotoregular', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer .fas{
+    padding: 0 10px 0 0;
+    color: white;
+}
