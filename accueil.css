@@ -119,7 +119,7 @@ header h1{
 
 /* SECTION RESTAURANTS */
 #restaurants{	
-	height: 1160px;
+	height: 1200px;
 	background-color: #EEEEEE;
 }
 #restaurants h2{
@@ -127,7 +127,7 @@ header h1{
     padding: 40px 0 0 20px;
 }
 .photo{
-	padding: 5px 0 0 20px;
+	padding: 20px 0 0 20px;
 }
 .photoenchanted{
 	padding: 0 0 0 20px;
