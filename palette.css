@@ -1,0 +1,47 @@
+@font-face  /* police du site*/
+{
+    font-family: 'Shrikhand';
+    src: url('Polices/Shrikhand-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Polices/Roboto/Roboto-Regular-webfont.eot');
+    src: url('Polices/Roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Polices/Roboto/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('Polices/Roboto/Roboto-Regular-webfont.woff') format('woff'),
+         url('Polices/Roboto/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Polices/Roboto/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	width: 375px;
+	margin: auto;
+	font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+}
+/* HEADER */
+header{
+	height: 60px;
+	text-align: center;
+	background-color: #F9FBF7;
+}
+header h1{
+	margin: 11px;
+	font-family: 'Shrikhand', 'robotoregular', Arial, Helvetica, sans-serif;
+}	
+/* SECTION MENU */
+img{
+    height: 220px;
+    width: 375px;
+}
+h2{
+    font-family: 'Shrikhand', 'robotoregular', Arial, Helvetica, sans-serif;
+    background-color: #EEEEEE;
+}
+#menu{
+    border-radius: 30px;
+}

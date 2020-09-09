@@ -98,7 +98,7 @@ header h1{
     background-color: #F6ECFB;
     border-radius: 20px;
 }
-.choix p, .creation p, .resto p{
+.choix p, .creation p, .resto p, .gras{
 	font-weight: bold;
 }
 .fas{
@@ -144,9 +144,6 @@ img{
     background-color: #F9FBF7;
     margin: 0 25px 0 0;
     border-radius: 0 0 15px 15px;
-}
-.gras{
-	font-weight: bold;
 }
 .new{
 	font-weight: bold;
