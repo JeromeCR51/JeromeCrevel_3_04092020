@@ -64,7 +64,8 @@ h2{
 }
 .menu .far{
     position: relative;
-    left: 90px;
+    float: right;
+    right: 45px;
     font-size: 22px;
 }
 /* ENTREE */
@@ -98,54 +99,17 @@ h2{
     margin-top: 0;
     font-size: 0.9em;
 }
-.prixescargot{
-    position: relative;
-    left: 90px;
-    font-weight: bold;
-}
-.prixfoiegras{
-    position: relative;
-    left: 102px;
-    font-weight: bold;
-}
 .prixegg{
     position: relative;
     left: 200px;
     font-weight: bold;
 }
-/* PLATS */
+.prix{
+    right: 25px;
+    position: relative;
+    float: right;
+    font-weight: bold;
 
-.prixsteak{
-    position: relative;
-    left: 205px;
-    font-weight: bold;
-}
-.prixshepard{
-    position: relative;
-    left: 30px;
-    font-weight: bold;
-}
-.prixsole{
-    position: relative;
-    left: 148px;
-    font-weight: bold;
-}
-/* DESSERTS */
-
-.prixbrest{
-    position: relative;
-    left: 219px;
-    font-weight: bold;
-}
-.prixmacaroons{
-    position: relative;
-    left: 134px;
-    font-weight: bold;
-}
-.prixmousse{
-    position: relative;
-    left: 94px;
-    font-weight: bold;
 }
 .bouton p{
     text-align: center;
@@ -155,7 +119,7 @@ h2{
     border-radius: 50px;
     height: 40px;
     width: 50%;
-	margin: 50px 0 0 70px;
+	margin: 50px 0 0 75px;
 	background-image: linear-gradient(to bottom, #ca4bcc, #d1add2);
 }
 

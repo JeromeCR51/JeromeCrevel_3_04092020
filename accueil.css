@@ -30,6 +30,7 @@ header{
 	text-align: center;
 	background-color: #F9FBF7;
 }
+
 header h1{
 	margin: 11px;
 	font-family: 'Shrikhand', 'robotoregular', Arial, Helvetica, sans-serif;
@@ -37,12 +38,9 @@ header h1{
 
 /* SECTION LOCALISATION */
 .localisation{
-	height: 50px;
+    height: 60px;
+	text-align: center;
 	background-color: #E0E0E0;
-	padding: 0 0 0 95px;
-}
-.localisation .fas{
-	padding: 0 10px 0 0;
 }
 
 /* SECTION DESCRIPTION */
@@ -93,15 +91,15 @@ header h1{
 	display: flex;
     align-items: center;
     height: 75px;
-    margin: 20px 0 0 25px;
+    margin: 25px 0 0 25px;
     width: 88%;
     background-color: #F6ECFB;
     border-radius: 20px;
 }
-.choix p, .creation p, .resto p, .gras{
+.selection p, .gras{
 	font-weight: bold;
 }
-.fas{
+.selection .fas{
 	padding: 0 25px 0 40px;
 	color: #848384;
 }
@@ -114,7 +112,7 @@ header h1{
     color: #FFFFFF;
     background-color: #9356DC;
     left: -9px;
-    padding: 3px 8px 4px 8px;
+    padding: 1px 8px 3px 9px;
 }
 
 /* SECTION RESTAURANTS */
@@ -158,8 +156,9 @@ img{
 }
 .far{
     position: relative;
+    float: right;
+    right: 30px;
     bottom: 16px;
-    left: 60%;
     font-size: 20px;
 }
 .far:hover{
