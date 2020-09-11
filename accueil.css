@@ -59,13 +59,15 @@ header h1{
 	padding-bottom: 40px;
 }
 .bouton p{
+    font-size: 0.9em;
+    color: white;
 	padding-top: 10px;
     border-radius: 50px;
     background-color: #ECEEEA;
     height: 40px;
     width: 65%;
 	margin-left: 60px;
-	background-image: linear-gradient(to bottom, #ca4bcc, #d1add2);
+	background-image: linear-gradient(to bottom, #d1add2,#ca4bcc);
 }
 
 /* SECTION SELECTION */
@@ -78,41 +80,40 @@ header h1{
 	margin: 0;
     padding: 50px 0px 0 20px;
 }
-.choix, .creation{
+.menu {
 	display: flex;
     align-items: center;
 	background-color: #ECEEEA;
-    height: 75px;
-    margin: 25px 0 0 25px;
-    width: 88%;
+    margin: 25px;
     border-radius: 20px;
 }
-.resto{
-	display: flex;
-    align-items: center;
-    height: 75px;
-    margin: 25px 0 0 25px;
-    width: 88%;
+.menu:hover {
     background-color: #F6ECFB;
-    border-radius: 20px;
 }
-.selection p, .gras{
-	font-weight: bold;
+.menu p {
+    position: relative;
+    padding: 10px 0;
 }
-.selection .fas{
+.menu .fas{
 	padding: 0 25px 0 40px;
 	color: #848384;
 }
-.resto .fas{
+.menu:hover .fas{
 	color: #9356DC;
 }
+.gras{
+	font-weight: bold;
+}
 .number{
-	position: relative;
-    border-radius: 50%;
+	position: absolute;
+    border-radius: 100%;
     color: #FFFFFF;
     background-color: #9356DC;
-    left: -9px;
-    padding: 1px 8px 3px 9px;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    left: -13px;
 }
 
 /* SECTION RESTAURANTS */
