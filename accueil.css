@@ -52,22 +52,24 @@ header h1{
 	background-color: #EEEEEE;
 	text-align: center;
     padding: 0 30px;
-    font-size: 1.1em;
 }
 .bouton{
-	margin: 0;
+    display: flex;
+    justify-content: center;
 	padding-bottom: 40px;
 }
 .bouton p{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 0.9em;
+    margin: 0;
     color: white;
-	padding-top: 10px;
     border-radius: 50px;
-    background-color: #ECEEEA;
-    height: 40px;
-    width: 65%;
-	margin-left: 60px;
-	background-image: linear-gradient(to bottom, #d1add2,#ca4bcc);
+    height: 50px;
+    width: 250px;
+	background-image: linear-gradient(to bottom, #cd7ed0,#ca4bcc);
 }
 
 /* SECTION SELECTION */
@@ -87,9 +89,6 @@ header h1{
     margin: 25px;
     border-radius: 20px;
 }
-.menu:hover {
-    background-color: #F6ECFB;
-}
 .menu p {
     position: relative;
     padding: 10px 0;
@@ -97,6 +96,9 @@ header h1{
 .menu .fas{
 	padding: 0 25px 0 40px;
 	color: #848384;
+}
+.menu:hover {
+    background-color: #F6ECFB;
 }
 .menu:hover .fas{
 	color: #9356DC;
@@ -127,9 +129,6 @@ header h1{
 }
 .photo{
 	padding: 20px 0 0 20px;
-}
-.photoenchanted{
-	padding: 0 0 0 20px;
 }
 img{
 	border-radius: 15px 15px 0 0;
