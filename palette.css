@@ -100,29 +100,37 @@ h2{
     font-size: 0.9em;
 }
 .interne {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: calc(100% - 0px);
+    height: 65px;
+    transition-duration: 1000ms; 
 }
 .interne:hover{
-    transition-duration: 400ms; 
+    transition-duration: 800ms; 
     width: calc(100% - 60px);
 }
+.interne:hover .bouton_vert {
+    display: block;
+}
 .bouton_vert{
+    display: none;
     text-align: center;
-    position: absolute;
-    width: 70px;
-    display: inline-block;
+    position: relative;
+    width: 60px;
     border-radius: 0 20px 20px 0;
-    background-color: green;
+    background-color: #99E2D0;
     line-height: 65px;
-    right: -70px;
+    right: -85px;
+    float: right;
+    height: 65px;
+    bottom: 32px;
 }
 .prix{
     right: 25px;
     position: relative;
     float: right;
     font-weight: bold;
-
 }
 .bouton p{
     display: flex;
