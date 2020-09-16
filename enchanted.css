@@ -144,6 +144,11 @@ h2{
     height: 50px;
     width: 200px;
     background-image: linear-gradient(to bottom,#d78dd8, #b94abd);
+    box-shadow: 4px 4px 4px #a09898;
+}
+.bouton p:hover{
+    box-shadow: 4px 4px 4px #524949;
+    background-image: linear-gradient(to bottom, #e8cdf1,#ca4bcc);
 }
 
 /* SECTION FOOTER */

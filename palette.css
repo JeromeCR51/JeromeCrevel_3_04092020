@@ -126,6 +126,16 @@ h2{
     height: 65px;
     bottom: 32px;
 }
+.fas{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    float: right;
+    left: 122px;
+    line-height: 6px;
+    background-color: #99e2d0;
+    color: #f9fbf7; 
+}
 .prix{
     right: 25px;
     position: relative;
@@ -143,6 +153,11 @@ h2{
     height: 50px;
     width: 200px;
     background-image: linear-gradient(to bottom,#d78dd8, #b94abd);
+    box-shadow: 4px 4px 4px #a09898;
+}
+.bouton p:hover{
+    box-shadow: 4px 4px 4px #524949;
+    background-image: linear-gradient(to bottom, #e8cdf1,#ca4bcc);
 }
 
 /* SECTION FOOTER */
