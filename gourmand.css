@@ -113,6 +113,7 @@ h2{
 .interne:hover .bouton_vert{
     display: block;
 }
+
 .bouton_vert{
     display: none;
     text-align: center;
@@ -125,6 +126,19 @@ h2{
     float: right;
     height: 65px;
     bottom: 32px;
+}
+.interne:hover .fas{
+    display: block;
+}
+.menu .fas{
+    display: none;
+    flex-direction: row-reverse;
+    position: relative;
+    float: right;
+    left: 122px;
+    line-height: 6px;
+    background-color: #99e2d0;
+    color: #f9fbf7; 
 }
 .prix{
     right: 25px;

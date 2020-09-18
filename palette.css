@@ -110,9 +110,10 @@ h2{
     transition-duration: 800ms; 
     width: calc(100% - 60px);
 }
-.interne:hover .bouton_vert {
+.interne:hover .bouton_vert{
     display: block;
 }
+
 .bouton_vert{
     display: none;
     text-align: center;
@@ -126,8 +127,11 @@ h2{
     height: 65px;
     bottom: 32px;
 }
-.fas{
-    display: flex;
+.interne:hover .fas{
+    display: block;
+}
+.menu .fas{
+    display: none;
     flex-direction: row-reverse;
     position: relative;
     float: right;
