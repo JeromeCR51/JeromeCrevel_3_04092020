@@ -68,7 +68,7 @@ h2{
     right: 45px;
     font-size: 22px;
 }
-/* ENTREE */
+/* MENU*/
 
 .entree, .plats, .desserts{
     display: flex;
@@ -88,7 +88,7 @@ h2{
     border-radius: 20px;
     width: 95%;
     margin: 15px 0 0 0;
-}
+}*/
 .menu h4, .menu p{
     padding: 0 0 0 10px;
 }
@@ -99,21 +99,29 @@ h2{
     margin-top: 0;
     font-size: 0.9em;
 }
-.interne {
+.animation{
     display: flex;
     flex-direction: column;
     width: calc(100% - 0px);
     height: 65px;
-    transition-duration: 1000ms; 
+    transition-duration: 1000ms;
 }
-.interne:hover{
+.animation:hover{
     transition-duration: 800ms; 
     width: calc(100% - 60px);
 }
-.interne:hover .bouton_vert{
+.raccourci{
+    display: none;
+}
+.animation:hover .raccourci{
     display: block;
 }
-
+.animation:hover .entier{
+    display: none;
+}
+.animation:hover .bouton_vert{
+    display: block;
+}
 .bouton_vert{
     display: none;
     text-align: center;
@@ -122,12 +130,12 @@ h2{
     border-radius: 0 20px 20px 0;
     background-color: #99E2D0;
     line-height: 65px;
-    right: -85px;
+    right: -84px;
     float: right;
     height: 65px;
     bottom: 32px;
 }
-.interne:hover .fas{
+.animation:hover .fas{
     display: block;
 }
 .menu .fas{
@@ -145,6 +153,53 @@ h2{
     position: relative;
     float: right;
     font-weight: bold;
+}
+/* animation speciale*/
+
+.animation_speciale{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 0px);
+    height: 80px;
+    transition-duration: 1000ms;
+}
+.animation_speciale:hover{
+    transition-duration: 800ms; 
+    width: calc(100% - 60px);
+}
+.animation_speciale:hover .bouton_vert_special{
+    display: block;
+}
+.bouton_vert_special{
+    display: none;
+    text-align: center;
+    position: relative;
+    width: 60px;
+    border-radius: 0 20px 20px 0;
+    background-color: #99E2D0;
+    right: -84px;
+    float: right;
+    height: 80px;
+    bottom: 51px;
+}
+.animation_speciale:hover .fas{
+    display: block;
+}
+.animation_speciale .fas{
+    display: none;
+    flex-direction: row-reverse;
+    position: relative;
+    float: right;
+    left: 122px;
+    bottom: 15px;
+    background-color: #99e2d0;
+    color: #f9fbf7;
+}
+.animation_speciale:hover .raccourci{
+    display: block;
+}
+.animation_speciale:hover .entier{
+    display: none;
 }
 .bouton p{
     display: flex;
