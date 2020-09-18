@@ -105,14 +105,14 @@ h2{
     margin-top: 0;
     font-size: 0.9em;
 }
-.animation, .description{ /*ajout*/
+.animation{ /*.description{ ajout*/
     display: flex;
     flex-direction: column;
     width: calc(100% - 0px);
     height: 65px;
     transition-duration: 1000ms;
 }
-.animation:hover .description{/* ajout */
+.animation:hover{ /*.description{     ajout */
     transition-duration: 800ms; 
     width: calc(100% - 60px);
 }
