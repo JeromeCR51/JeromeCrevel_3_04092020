@@ -68,7 +68,11 @@ h2{
     right: 45px;
     font-size: 22px;
 }
-/* ENTREE */
+.far:active{
+    font-weight: bold;
+    color: #9356DC;
+}
+/* COMPOSITION */
 
 .entree, .plats, .desserts{
     display: flex;
@@ -99,30 +103,29 @@ h2{
     margin-top: 0;
     font-size: 0.9em;
 }
-.raccourci{
-    display: none;
-}
-.interne:hover .raccourci{
-    display: block;
-}
-.interne:hover .entier{
-    display: none;
-}
-.interne {
+.animation{
     display: flex;
     flex-direction: column;
     width: calc(100% - 0px);
     height: 65px;
-    transition-duration: 1000ms; 
+    transition-duration: 1000ms;
 }
-.interne:hover{
+.animation:hover{
     transition-duration: 800ms; 
     width: calc(100% - 60px);
 }
-.interne:hover .bouton_vert{
+.raccourci{
+    display: none;
+}
+.animation:hover .raccourci{
     display: block;
 }
-
+.animation:hover .entier{
+    display: none;
+}
+.animation:hover .bouton_vert{
+    display: block;
+}
 .bouton_vert{
     display: none;
     text-align: center;
@@ -131,12 +134,12 @@ h2{
     border-radius: 0 20px 20px 0;
     background-color: #99E2D0;
     line-height: 65px;
-    right: -85px;
+    right: -84px;
     float: right;
     height: 65px;
     bottom: 32px;
 }
-.interne:hover .fas{
+.animation:hover .fas{
     display: block;
 }
 .menu .fas{
