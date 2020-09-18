@@ -1,4 +1,5 @@
 .spinner{
+    /*création du loader*/
     border-left-color: #333333;
     border: 16PX solid #000000;
     border-bottom-color: #555555;
@@ -10,20 +11,39 @@
     -webkit-animation: spin 2s infinite linear;
     -moz-animation: spin 2s infinite linear;
     -o-animation: spin 2s infinite linear;
+
+    /*placement loader milieu de page*/
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;  
 }
+
+
+/* animation loader*/
+
 @keyframes spin{
-    100% { transform: rotate(360deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg);
+    }
 }
 
 @-webkit-keyframes spin{
-    -webkit-transform: rotate(360deg);
-    100% { transform: rotate(360deg);}
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% { 
+        -webkit-transform: rotate(360deg);
+    }
 }
+
 @-webkit-keyframes spin{
-    -moz-transform: rotate(360deg);
-    100% { transform: rotate(360deg);}
-}
-@-webkit-keyframes spin{
-    -o-transform: rotate(360deg);
-    100% { transform: rotate(360deg);}
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% { 
+        -moz-transform: rotate(360deg);
+    }
 }
