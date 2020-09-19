@@ -72,7 +72,6 @@ h2{
     font-weight: bold;
     color: #9356DC;
 }
-
 /* COMPOSITION*/
 
 .entree, .plats, .desserts{
@@ -136,7 +135,7 @@ h2{
     border-radius: 0 20px 20px 0;
     background-color: #99E2D0;
     line-height: 65px;
-    right: -84px;
+    right: -85px;
     float: right;
     height: 65px;
     bottom: 32px;
