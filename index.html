@@ -64,21 +64,19 @@
             
         </footer> 
 
+        
+     </div>
         <script>
-            document.querySelector('header').style.display = 'none';
-            document.querySelector('.main').classList.add('spinner');
+            document.querySelector('.main').style.display = 'none';
+            document.querySelector('.main').classList.add('spin');
         
             setTimeout(() => {
-                document.querySelector('header').style.display = 'block';
-                document.querySelector('.main').classList.remove('spinner');
-            }, 2000);
+                document.querySelector('.main').classList.remove('spin');
+                document.querySelector('.main').style.display = 'block';   
+            }, 4000);
         
         </script>
-        </div>
+        
  
     </body>
-   
-
-    
-
 </html>
