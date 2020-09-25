@@ -72,15 +72,10 @@
 }
 /* transition*/
 
-.content{
-    -webkit-transform: translatey(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translatey(-100%);  /* IE 9 */
-    transform: translatey(-100%);  /* Firefox 16+, IE 10+, Opera */
-}
-.loader-wrapper{
+#loader-wrapper{
     -webkit-transition: all 2s ease-out;
             transition: all 2s ease-out;
-            -webkit-transform: translatey(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translatey(100%);  /* IE 9 */
-    transform: translatey(100%);  /* Firefox 16+, IE 10+, Opera */
+            -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);  /* IE 9 */
+    transform: translateY(-100%)  /* Firefox 16+, IE 10+, Opera */
 }

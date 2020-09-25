@@ -45,7 +45,7 @@ header a{
 }	
 /* SECTION MENU */
 .menu{
-    height: 1200px;
+    height: 1115px;
     background-color: #EEEEEE;
     border-radius: 40px 40px 0 0;
     position: relative;
@@ -112,7 +112,7 @@ h2{
     transition-duration: 1000ms;
 }
 .animation:hover{ /*.description{     ajout */
-    transition-duration: 800ms; 
+    transition-duration: 1000ms; 
     width: calc(100% - 60px);
 }
 .raccourci{
@@ -247,4 +247,63 @@ footer .fas{
 }
 .suggest{
     padding-left: 7px;
+}
+
+/*apparition progressive*/
+
+.entree {
+    
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari et Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+    opacity: 1;   
+}
+
+.plats {  
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
+    -o-animation: fadein 3s; /* Opera */
+ }
+
+ .desserts {  
+    animation: fadein 4.5s;
+    -moz-animation: fadein 4.5s; /* Firefox */
+    -webkit-animation: fadein 4.5s; /* Safari et Chrome */
+    -o-animation: fadein 4.5s; /* Opera */
+ }
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0;
+    }
 }
