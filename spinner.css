@@ -70,4 +70,35 @@
            transform: rotate(360deg);
     }
 }
+.content{
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0;
+    }
+}
+#loader-wrapper{
+    animation: fadeout 3s;
+    -moz-animation: fadeout 3s; /* Firefox */
+    -webkit-animation: fadeout 3s; /* Safari et Chrome */
+    -o-animation: fadeout 3s; /* Opera */
+}
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+  
+
+
 
