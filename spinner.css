@@ -9,7 +9,7 @@
 .loader{  /* creation du spinner en lui-même * partie bleu */
     display: block;
     position: relative;
-    left: 50%;
+    left: 105%;
     top: 50%;
     width: 150px;
     height: 150px;
@@ -70,12 +70,4 @@
            transform: rotate(360deg);
     }
 }
-/* transition*/
 
-#loader-wrapper{
-    -webkit-transition: all 2s ease-out;
-            transition: all 2s ease-out;
-            -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateY(-100%);  /* IE 9 */
-    transform: translateY(-100%)  /* Firefox 16+, IE 10+, Opera */
-}

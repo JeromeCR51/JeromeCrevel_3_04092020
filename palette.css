@@ -260,7 +260,6 @@ footer .fas{
     -moz-animation: fadein 1.5s; /* Firefox */
     -webkit-animation: fadein 1.5s; /* Safari et Chrome */
     -o-animation: fadein 1.5s; /* Opera */
-    opacity: 1;   
 }
 
 .plats {  
