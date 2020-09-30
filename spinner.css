@@ -89,6 +89,7 @@
     -moz-animation: fadeout 3s; /* Firefox */
     -webkit-animation: fadeout 3s; /* Safari et Chrome */
     -o-animation: fadeout 3s; /* Opera */
+    z-index: 0;
 }
 @keyframes fadeout {
     from {
@@ -98,6 +99,7 @@
         opacity:0;
     }
 }
+
   
 
 

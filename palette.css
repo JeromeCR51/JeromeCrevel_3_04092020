@@ -153,6 +153,9 @@ h2{
     line-height: 6px;
     background-color: #99e2d0;
     color: #f9fbf7; 
+    /*transform: scale(1);
+    transition-duration: 2s;
+    transition-property: transform;*/
 }
 .prix{
     right: 25px;
