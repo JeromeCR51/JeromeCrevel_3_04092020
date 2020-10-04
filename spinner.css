@@ -8,8 +8,8 @@
 
 .loader{  /* creation du spinner en lui-même * partie bleu */
     display: block;
-    position: fixed;
-    left: 50%;
+    position: relative;
+    left: 25%;
     top: 50%;
     width: 150px;
     height: 150px;
@@ -99,10 +99,10 @@
 }
 
 @keyframes fadeout {
-    100% {
+    from {
         opacity:1;
     }
-    0% {
+    to {
         opacity:0;
     }
 }

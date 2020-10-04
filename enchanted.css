@@ -251,59 +251,45 @@ footer .fas{
 
 /*apparition progressive*/
 
-.entree {
+.nomination {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+    -o-animation: fadein 2s; /* Opera */
     
-    animation: fadein 1.5s;
-    -moz-animation: fadein 1.5s; /* Firefox */
-    -webkit-animation: fadein 1.5s; /* Safari et Chrome */
-    -o-animation: fadein 1.5s; /* Opera */
-    opacity: 1;   
 }
 
-.plats {  
-    animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari et Chrome */
-    -o-animation: fadein 3s; /* Opera */
- }
-
- .desserts {  
-    animation: fadein 4.5s;
-    -moz-animation: fadein 4.5s; /* Firefox */
-    -webkit-animation: fadein 4.5s; /* Safari et Chrome */
-    -o-animation: fadein 4.5s; /* Opera */
- }
-
-
 @keyframes fadein {
-    from {
+    0% {
         opacity:0;
+        margin-top: 50px;
     }
-    to {
-        opacity:0;
+    100% {
+        opacity:1;
+        margin-top: 15px;
     }
 }
 @-moz-keyframes fadein { /* sur Firefox */
-    from {
+    0% {
         opacity:0;
     }
-    to {
-        opacity:0;
+    100% {
+        opacity:1;
     }
 }
 @-webkit-keyframes fadein { /* sur Safari et Chrome */
-    from {
+    0% {
         opacity:0;
     }
-    to {
-        opacity:0;
+    100% {
+        opacity:1;
     }
 }
 @-o-keyframes fadein { /* sur Opera */
-    from {
+    0% {
         opacity:0;
     }
-    to {
-        opacity:0;
+    100% {
+        opacity:1;
     }
 }
