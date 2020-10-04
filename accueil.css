@@ -16,6 +16,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 body{
 	display: flex;
 	flex-direction: column;
@@ -25,18 +26,15 @@ body{
 }
 
 /* HEADER */
-header{
+
+header h1{
     line-height: 55px;
 	height: 60px;
 	text-align: center;
-	background-color: #F9FBF7;
-}
-
-header h1{
-	margin: 0;
+    background-color: #F9FBF7;
+    margin: 0;
 	font-family: 'Shrikhand', 'robotoregular', Arial, Helvetica, sans-serif;
-}	
-
+}
 /* SECTION LOCALISATION */
 .localisation{
     position: relative;
@@ -98,7 +96,6 @@ header h1{
 }
 .menu {
 	display: flex;
-    align-items: center;
 	background-color: #ECEEEA;
     margin: 25px;
     border-radius: 20px;
@@ -133,6 +130,10 @@ header h1{
 }
 
 /* SECTION RESTAURANTS */
+
+.restaurants2{
+    display: none;
+}
 .restaurants{
     position: relative;
     bottom: 20px;	
@@ -149,7 +150,7 @@ header h1{
 img{
 	border-radius: 15px 15px 0 0;
 }
-.photo a, .photoenchanted a{
+.photo a, .photobis a{
 	background-color: #f9fbf7;
 }
 .restaurants p{
@@ -212,3 +213,58 @@ footer .fas{
     padding-left: 7px;
 }
 
+@media all and (min-width: 768px)
+{
+body{
+	width: 1280px;
+	margin: auto;
+	font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+}
+.selection{
+        display: flex;
+        justify-content: space-around;
+        height: 125px;
+}
+.menu{
+    width: 24%;
+}
+.restaurants{
+    display: none;
+}
+.restaurants2{
+    display: flex;
+    flex-wrap: wrap;
+    height: 660px;
+    position: relative;
+    bottom: 20px;	
+	background-color: #EEEEEE;
+}
+.restaurants2 h2{
+	margin: 0;
+    padding-top: 40px;
+    padding-left: 45%;
+}
+.restaurants2 p{
+	padding: 8px 0 0 15px;
+    height: 50px;
+    background-color: #F9FBF7;
+    margin: 0 0 0 68px;
+    border-radius: 0 0 15px 15px;
+}
+img{
+	border-radius: 15px 15px 0 0;
+}
+.photogeneral{
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo{
+    padding: 20px 0 0 135px;
+}
+.photobis{
+	padding: 20px 0 0 203px;
+}
+.photobis p{ 
+    margin: 0 0 45px 0; 
+}
+}
