@@ -8,8 +8,8 @@
 
 .loader{  /* creation du spinner en lui-même * partie bleu */
     display: block;
-    position: relative;
-    left: 50%;
+    position: fixed;
+    left: 45%;
     top: 50%;
     width: 150px;
     height: 150px;
@@ -104,6 +104,12 @@
     }
     to {
         opacity:0;
+    }
+}
+
+@media all and (min-width: 768px){
+.loader{
+        left: 85%;
     }
 }
 

@@ -147,11 +147,9 @@ h2{
     bottom: 32px;
 }
 .animation:hover .fas{
-    display: block;
-    -webkit-transform: rotate(360deg);
-    transition-duration: 2s;
-    transition-property: transform;
+    display: block; 
 }
+
 .menu .fas{
     display: none;
     flex-direction: row-reverse;
@@ -160,7 +158,7 @@ h2{
     left: 122px;
     line-height: 6px;
     background-color: #99e2d0;
-    color: #f9fbf7;  
+    color: #f9fbf7; 
 }
 .prix{
     right: 25px;
