@@ -121,41 +121,37 @@ h2{
     transition-duration: 800ms; 
     width: calc(100% - 60px);
 }
-.raccourci{
-    display: none;
-}
-.animation:hover .raccourci{
-    display: block;
-}
-.animation:hover .entier{
-    display: none;
-}
-.animation:hover .bouton_vert{
-    display: block;
+.animation:hover p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 .bouton_vert{
-    display: none;
+  
     text-align: center;
     position: relative;
     width: 60px;
     border-radius: 0 20px 20px 0;
     background-color: #99E2D0;
     line-height: 65px;
-    right: -84px;
+    right: -88px;
     float: right;
     height: 65px;
-    bottom: 32px;
+    bottom: 65px;
 }
-.animation:hover .fas{
-    display: block; 
-}
+.animation .fas {
+    transition: transform 1s ease-in;
+    -webkit-transition: -webkit-transform 1s ease-in;
 
+}
+.animation:hover .fas {
+    display: block;
+    transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg); 
+}
 .menu .fas{
-    display: none;
-    flex-direction: row-reverse;
-    position: relative;
-    float: right;
-    left: 122px;
+    padding-top: 29px;
     line-height: 6px;
     background-color: #99e2d0;
     color: #f9fbf7; 
@@ -165,6 +161,7 @@ h2{
     position: relative;
     float: right;
     font-weight: bold;
+    bottom: 35px;
 }
 /* animation speciale*/
 
@@ -179,39 +176,34 @@ h2{
     transition-duration: 1000ms; 
     width: calc(100% - 60px);
 }
-.animation_speciale:hover .bouton_vert_special{
-    display: block;
+.animation_speciale:hover p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 .bouton_vert_special{
-    display: none;
     text-align: center;
     position: relative;
     width: 60px;
     border-radius: 0 20px 20px 0;
     background-color: #99E2D0;
-    right: -84px;
+    right: -88px;
     float: right;
     height: 80px;
-    bottom: 51px;
-}
-.animation_speciale:hover .fas{
-    display: block;
+    bottom: 84px;
 }
 .animation_speciale .fas{
-    display: none;
-    flex-direction: row-reverse;
-    position: relative;
-    float: right;
-    left: 122px;
-    bottom: 15px;
+    transition: transform 1s ease-in;
+    -webkit-transition: -webkit-transform 1s ease-in;
+    padding-top: 40px;
     background-color: #99e2d0;
     color: #f9fbf7;
 }
-.animation_speciale:hover .raccourci{
+.animation_speciale:hover .fas{
     display: block;
-}
-.animation_speciale:hover .entier{
-    display: none;
+    transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg); 
 }
 .bouton p{
     display: flex;
@@ -306,7 +298,7 @@ footer .fas{
 @media all and (min-width: 768px)
 {
 body{
-	width: 1280px;
+	width: 90%;
 	margin: auto;
 	font-family: 'robotoregular', Arial, Helvetica, sans-serif;
 }
