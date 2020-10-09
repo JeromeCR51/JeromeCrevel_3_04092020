@@ -43,7 +43,6 @@ header a{
     color: black;
     text-decoration: none;
 }	
-/* SECTION MENU */
 .menu{
     height: 1115px;
     background-color: #EEEEEE;
@@ -72,7 +71,8 @@ h2{
     font-weight: bold;
     color: #9356DC;
 }
-/* COMPOSITION */
+
+/* COMPOSITION*/
 
 .entree, .plats, .desserts{
     display: flex;
@@ -92,7 +92,8 @@ h2{
     border-radius: 20px;
     width: 95%;
     margin: 15px 0 0 0;
-    overflow: hidden; /* ajout */
+    overflow: hidden;
+    box-shadow: 4px 4px 4px #a09898;
 }
 .menu h4, .menu p{
     padding: 0 0 0 10px;
@@ -109,46 +110,44 @@ h2{
     flex-direction: column;
     width: calc(100% - 0px);
     height: 65px;
-    transition-duration: 1000ms; 
+    transition-duration: 1000ms;
+    
 }
-.animation:hover{
-    transition-duration: 1000ms; 
+.animation:hover{ 
+    transition-duration: 800ms; 
     width: calc(100% - 60px);
 }
-.raccourci{
-    display: none;
-}
-.animation:hover .raccourci{
-    display: block;
-}
-.animation:hover .entier{
-    display: none;
-}
-.animation:hover .bouton_vert{
-    display: block;
+.animation:hover p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 .bouton_vert{
-    display: none;
+  
     text-align: center;
     position: relative;
     width: 60px;
     border-radius: 0 20px 20px 0;
     background-color: #99E2D0;
     line-height: 65px;
-    right: -85px;
+    right: -88px;
     float: right;
     height: 65px;
-    bottom: 32px;
+    bottom: 65px;
 }
-.animation:hover .fas{
+.animation .fas {
+    transition: transform 1s ease-in;
+    -webkit-transition: -webkit-transform 1s ease-in;
+
+}
+.animation:hover .fas {
     display: block;
+    transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg); 
 }
 .menu .fas{
-    display: none;
-    flex-direction: row-reverse;
-    position: relative;
-    float: right;
-    left: 122px;
+    margin-top: 30px;
     line-height: 6px;
     background-color: #99e2d0;
     color: #f9fbf7; 
@@ -158,6 +157,49 @@ h2{
     position: relative;
     float: right;
     font-weight: bold;
+    bottom: 35px;
+}
+/* animation speciale*/
+
+.animation_speciale{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 0px);
+    height: 80px;
+    transition-duration: 1000ms;
+}
+.animation_speciale:hover{
+    transition-duration: 1000ms; 
+    width: calc(100% - 60px);
+}
+.animation_speciale:hover p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+.bouton_vert_special{
+    text-align: center;
+    position: relative;
+    width: 60px;
+    border-radius: 0 20px 20px 0;
+    background-color: #99E2D0;
+    right: -88px;
+    float: right;
+    height: 80px;
+    bottom: 84px;
+}
+.animation_speciale .fas{
+    transition: transform 1s ease-in;
+    -webkit-transition: -webkit-transform 1s ease-in;
+    margin-top: 40px;
+    background-color: #99e2d0;
+    color: #f9fbf7;
+}
+.animation_speciale:hover .fas{
+    display: block;
+    transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg); 
 }
 .bouton p{
     display: flex;
@@ -178,6 +220,7 @@ h2{
 }
 
 /* SECTION FOOTER */
+
 footer{
     position: relative;
     bottom: 45px;
@@ -211,7 +254,6 @@ footer .fas{
     -o-animation: fadein 2s; /* Opera */
     
 }
-
 @keyframes fadein {
     0% {
         opacity:0;
@@ -252,64 +294,20 @@ footer .fas{
 @media all and (min-width: 768px)
 {
 body{
-	width: 1280px;
-	margin: auto;
-	font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+	width: 90%;
 }
 .image{
     display: flex;
     justify-content: center;
     background-color: #F9FBF7;
 }
-.menu{
-    display: none;
-}
-.repas{
+.responsive{
     display: block;
-    height: 550px;
-    background-color: #EEEEEE;
-    border-radius: 40px 40px 0 0;
-    position: relative;
-    bottom: 45px;
-    padding: 0 0 0 20px;
-}
-
-.repas .far{
-    position: relative;
-    float: right;
-    right: 45px;
-    font-size: 22px;
-}
-.repas .far:active{
-    font-weight: bold;
-    color: #9356DC;
-}
-.repas h4, .repas p{
-    padding: 0 0 0 10px;
-}
-.repas h4{
-    margin: 10px 0 0 0;
-}
-.repas p{
-    margin-top: 0;
-    font-size: 0.9em;
-}
-.repas .fas{
-    display: none;
-    flex-direction: row-reverse;
-    position: relative;
-    float: right;
-    left: 122px;
-    line-height: 6px;
-    background-color: #99e2d0;
-    color: #f9fbf7;  
+    display: flex;
+    justify-content: space-around;
 }
 h2{
     text-align: center;
-}
-.responsive{
-    display: flex;
-    justify-content: space-around;
 }
 .entree, .desserts{
     width: 30%;
@@ -321,5 +319,8 @@ h2{
 .bouton{
     display: flex;
     justify-content: center;
-    padding-top: 70px;
+    padding-top: 25px;
+}
+.menu{
+    height: 580px;
 }

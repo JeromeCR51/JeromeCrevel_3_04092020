@@ -43,10 +43,6 @@ header a{
     color: black;
     text-decoration: none;
 }	
-/* SECTION MENU */
-.repas{
-    display: none;
-}
 .menu{
     height: 1115px;
     background-color: #EEEEEE;
@@ -151,7 +147,7 @@ h2{
     -webkit-transform: rotate(360deg); 
 }
 .menu .fas{
-    padding-top: 29px;
+    margin-top: 30px;
     line-height: 6px;
     background-color: #99e2d0;
     color: #f9fbf7; 
@@ -196,7 +192,7 @@ h2{
 .animation_speciale .fas{
     transition: transform 1s ease-in;
     -webkit-transition: -webkit-transform 1s ease-in;
-    padding-top: 40px;
+    margin-top: 40px;
     background-color: #99e2d0;
     color: #f9fbf7;
 }
@@ -299,63 +295,19 @@ footer .fas{
 {
 body{
 	width: 90%;
-	margin: auto;
-	font-family: 'robotoregular', Arial, Helvetica, sans-serif;
 }
 .image{
     display: flex;
     justify-content: center;
     background-color: #F9FBF7;
 }
-.menu{
-    display: none;
-}
-.repas{
+.responsive{
     display: block;
-    height: 550px;
-    background-color: #EEEEEE;
-    border-radius: 40px 40px 0 0;
-    position: relative;
-    bottom: 45px;
-    padding: 0 0 0 20px;
-}
-
-.repas .far{
-    position: relative;
-    float: right;
-    right: 45px;
-    font-size: 22px;
-}
-.repas .far:active{
-    font-weight: bold;
-    color: #9356DC;
-}
-.repas h4, .repas p{
-    padding: 0 0 0 10px;
-}
-.repas h4{
-    margin: 10px 0 0 0;
-}
-.repas p{
-    margin-top: 0;
-    font-size: 0.9em;
-}
-.repas .fas{
-    display: none;
-    flex-direction: row-reverse;
-    position: relative;
-    float: right;
-    left: 122px;
-    line-height: 6px;
-    background-color: #99e2d0;
-    color: #f9fbf7;  
+    display: flex;
+    justify-content: space-around;
 }
 h2{
     text-align: center;
-}
-.responsive{
-    display: flex;
-    justify-content: space-around;
 }
 .entree, .desserts{
     width: 30%;
@@ -367,5 +319,8 @@ h2{
 .bouton{
     display: flex;
     justify-content: center;
-    padding-top: 70px;
+    padding-top: 25px;
+}
+.menu{
+    height: 580px;
 }
