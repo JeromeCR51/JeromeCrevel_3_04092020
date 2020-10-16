@@ -66,34 +66,7 @@ header h1{
 
 @media all and (min-width: 768px)
 {
-body{
-    width: 90%;
-    margin: auto;
-}
-.selection{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        text-align: center;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        height: 154px;
-}
-
-.menu{
-    width: 24%;
-}
-.restaurants{
-    height: 100%;
-}
-.restaurants h2{
-    text-align: center;
-    padding: 40px 0 0 0;
-}
-.restaurants p{
-    position: relative;
-    bottom: 5px;
-    width: calc( 100% - 15px );
-
+.carte{
+    display: none;
 }
 }

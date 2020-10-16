@@ -53,13 +53,18 @@ header h1{
 	background-color: #EEEEEE;
 	text-align: center;
     padding: 0 30px;
+    display: -webkit-box;	
+	-webkit-box-orient: vertical;   
 }
 .description h2, .discover, .bouton{
     margin: 0;
+    -webkit-margin-before: 30px;
 }
 .bouton{
     display: flex;
     justify-content: center;
+    display: -webkit-box;
+    -webkit-box-pack: center;
 }
 .bouton p{
     box-shadow: 4px 4px 4px #a09898;
@@ -72,15 +77,19 @@ header h1{
     border-radius: 50px;
     height: 50px;
     width: 250px;
-	background-image: linear-gradient(to bottom, #cd7ed0,#ca4bcc);
+    background-image: linear-gradient(to bottom, #cd7ed0,#ca4bcc);
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;   
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#cd7ed0),to(#ca4bcc));
 }
+
+
 .bouton p:hover{
     box-shadow: 4px 4px 4px #524949;
     background-image: linear-gradient(to bottom, #e8cdf1,#ca4bcc);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e8cdf1),to(#ca4bcc));
 }
-
-
-
 .selection{
     position: relative;
     bottom: 20px;
@@ -96,10 +105,13 @@ header h1{
 	background-color: #ECEEEA;
     margin: 25px;
     border-radius: 20px;
+    -webkit-logical-height: 80px;
+    -webkit-padding-before: 5px
 }
 .menu p {
     position: relative;
     padding: 10px 0;
+    text-align: center;
 }
 .menu .fas{
 	padding: 0 25px 0 40px;
@@ -129,6 +141,11 @@ header h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    display: -webkit-box;  
+    -webkit-box-orient: vertical; 
+}
+.carte p{
+    -webkit-margin-end: 5px;
 }
 .restaurants{
     position: relative;
@@ -167,6 +184,7 @@ img{
     padding: 3px 20px 3px 20px;
     top: 36px;
     left: 67%;
+    -webkit-text-stroke-width: 0.1px;
 }
 .far{
     position: relative;
@@ -218,13 +236,19 @@ body{
 }
 .selection{
         display: flex;
+        display: -webkit-box;
+        flex-wrap: nowrap;
         text-align: center;
-        justify-content: space-around;
         height: 154px;
 }
-
 .menu{
-    width: 24%;
+    width: 26%;
+}
+.carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
 }
 .restaurants{
     height: 100%;
