@@ -40,7 +40,7 @@ header h1{
 	background-color: #E0E0E0;
 }
 .localisation h2{
-    line-height: 60px;
+    line-height: 50px;
 }
 
 .description{
@@ -54,10 +54,12 @@ header h1{
 	text-align: center;
     padding: 0 30px;
 }
+.description h2, .discover, .bouton{
+    margin: 0;
+}
 .bouton{
     display: flex;
     justify-content: center;
-	padding-bottom: 40px;
 }
 .bouton p{
     box-shadow: 4px 4px 4px #a09898;
@@ -123,7 +125,7 @@ header h1{
     line-height: 26px;
     left: -13px;
 }
-.test{
+.carte{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -145,7 +147,7 @@ header h1{
 img{
 	border-radius: 15px 15px 0 0;
 }
-.photo a, .photobis a{
+.photo a{
 	background-color: #f9fbf7;
 }
 .restaurants p{
@@ -224,6 +226,9 @@ body{
 .menu{
     width: 24%;
 }
+.restaurants{
+    height: 100%;
+}
 .restaurants h2{
     text-align: center;
     padding: 40px 0 0 0;
@@ -234,11 +239,4 @@ body{
     width: calc( 100% - 15px );
 
 }
-
-/*img{
-	border-radius: 15px 15px 0 0;
-}
-.photo{
-    padding: 20px 0 0 135px;
-}*/
 }
