@@ -198,7 +198,6 @@ img{
     color: #9356DC;
 }
 
-
 footer{
     position: relative;
     bottom: 20px;
@@ -231,24 +230,27 @@ footer .fas{
 @media all and (min-width: 768px)
 {
 body{
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .selection{
-        display: flex;
-        display: -webkit-box;
-        flex-wrap: nowrap;
-        text-align: center;
-        height: 154px;
+    /*display: flex;*/
+   /* flex-direction: column;*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    height: 240px;
+}
+.selection h2{
+    padding: 50px 0 20px 20px;
 }
 .menu{
-    width: 26%;
+    width: 30%;
+    margin: 0 25px 0px 0;
 }
-.carte{
+.choixmenu{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    -webkit-box-orient: horizontal;
+    display: -webkit-box;
 }
 .restaurants{
     height: 100%;
@@ -261,6 +263,11 @@ body{
     position: relative;
     bottom: 5px;
     width: calc( 100% - 15px );
-
+}
+.carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
 }
 }
