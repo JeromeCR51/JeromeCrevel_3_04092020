@@ -42,29 +42,23 @@ header h1{
 .localisation h2{
     line-height: 50px;
 }
-
 .description{
     position: relative;
     bottom: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	height: 290px;
+	height: 250px;
 	background-color: #EEEEEE;
 	text-align: center;
-    padding: 0 30px;
-    display: -webkit-box;	
-	-webkit-box-orient: vertical;   
+    padding: 0 30px;  
 }
-.description h2, .discover, .bouton{
-    margin: 0;
-    -webkit-margin-before: 30px;
+.description h2{
+    padding-top: 15px;
 }
 .bouton{
     display: flex;
     justify-content: center;
-    display: -webkit-box;
-    -webkit-box-pack: center;
 }
 .bouton p{
     box-shadow: 4px 4px 4px #a09898;
@@ -72,23 +66,15 @@ header h1{
     align-items: center;
     justify-content: center;
     font-size: 0.9em;
-    margin: 0;
     color: white;
     border-radius: 50px;
     height: 50px;
     width: 250px;
-    background-image: linear-gradient(to bottom, #cd7ed0,#ca4bcc);
-    display: -webkit-box;
-    -webkit-box-align: center;
-    -webkit-box-pack: center;   
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#cd7ed0),to(#ca4bcc));
+    background-image: linear-gradient(to bottom, #cd7ed0,#ca4bcc); 
 }
-
-
 .bouton p:hover{
     box-shadow: 4px 4px 4px #524949;
     background-image: linear-gradient(to bottom, #e8cdf1,#ca4bcc);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e8cdf1),to(#ca4bcc));
 }
 .selection{
     position: relative;
@@ -103,10 +89,8 @@ header h1{
 .menu {
 	display: flex;
 	background-color: #ECEEEA;
-    margin: 25px;
+    margin: 25px 25px;
     border-radius: 20px;
-    -webkit-logical-height: 80px;
-    -webkit-padding-before: 5px
 }
 .menu p {
     position: relative;
@@ -141,11 +125,6 @@ header h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    display: -webkit-box;  
-    -webkit-box-orient: vertical; 
-}
-.carte p{
-    -webkit-margin-end: 5px;
 }
 .restaurants{
     position: relative;
@@ -184,7 +163,6 @@ img{
     padding: 3px 20px 3px 20px;
     top: 36px;
     left: 67%;
-    -webkit-text-stroke-width: 0.1px;
 }
 .far{
     position: relative;
@@ -231,7 +209,6 @@ footer .fas{
 {
 body{
     width: 100%;
-    margin: auto;
 }
 .selection{
     display: flex;
@@ -243,12 +220,14 @@ body{
     padding: 50px 0 20px 20px;
 }
 .menu{
-    width: 20%;
-    margin: 0 25px 0px 25px;
+    width: 100%;
 }
 .choixmenu{
     display: flex;
     justify-content: center;
+}
+.restaurants{
+    height: 100%;
 }
 .restaurants h2{
     text-align: center;

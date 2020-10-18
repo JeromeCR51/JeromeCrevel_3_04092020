@@ -44,7 +44,7 @@ header a{
     text-decoration: none;
 }	
 .menu{
-    height: 1115px;
+    height: 100%;
     background-color: #EEEEEE;
     border-radius: 40px 40px 0 0;
     position: relative;
@@ -302,25 +302,29 @@ body{
     background-color: #F9FBF7;
 }
 .responsive{
-    display: block;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 h2{
     text-align: center;
 }
-.entree, .desserts{
-    width: 30%;
-}
-.plats{
-    width: 30%;
-    height: 290px;
+.entree, .plats, .desserts{
+    width: 90%;
 }
 .bouton{
     display: flex;
     justify-content: center;
     padding-top: 25px;
 }
-.menu{
-    height: 580px;
+.bouton_vert{
+    right: -92px;
+}
+}
+
+@media all and (min-width: 1200px)
+{
+.responsive{
+    flex-direction: row;
+}
 }
