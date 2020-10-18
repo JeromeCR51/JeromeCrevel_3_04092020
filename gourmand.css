@@ -324,4 +324,7 @@ h2{
 .responsive{
     flex-direction: row;  
 }
+.plats{
+    padding-top: 15px;
+}
 }

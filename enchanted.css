@@ -159,48 +159,7 @@ h2{
     font-weight: bold;
     bottom: 35px;
 }
-/* animation speciale*/
 
-.animation_speciale{
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 0px);
-    height: 80px;
-    transition-duration: 1000ms;
-}
-.animation_speciale:hover{
-    transition-duration: 1000ms; 
-    width: calc(100% - 60px);
-}
-.animation_speciale:hover p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 150px;
-}
-.bouton_vert_special{
-    text-align: center;
-    position: relative;
-    width: 60px;
-    border-radius: 0 20px 20px 0;
-    background-color: #99E2D0;
-    right: -90px;
-    float: right;
-    height: 80px;
-    bottom: 84px;
-}
-.animation_speciale .fas{
-    transition: transform 1s ease-in;
-    -webkit-transition: -webkit-transform 1s ease-in;
-    margin-top: 40px;
-    background-color: #99e2d0;
-    color: #f9fbf7;
-}
-.animation_speciale:hover .fas{
-    display: block;
-    transform: rotate(360deg); 
-    -webkit-transform: rotate(360deg); 
-}
 .bouton p{
     display: flex;
     align-items: center;
@@ -319,9 +278,6 @@ h2{
 }
 .bouton_vert{
     right: -92px;
-}
-.bouton_vert_special{
-    bottom: 87px;
 }
 }
 
