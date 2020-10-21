@@ -24,10 +24,10 @@ body, .bouton, .bouton p, .menu, .carte{
 header h1, .localisation, .description, .number{
     text-align: center;
 }
-header h1, .localisation h2, .description h2, .selection h2, .restaurants h2, .restaurants p, footer h3, footer p{
+header h1, .localisation h2, .description h2, .selection h2, .restaurants h2, figcaption, footer h3, footer p{
     margin: 0;
 }
-header h1, .selection, .photo a, .restaurants p{
+header h1, .selection, .photo a, figcaption{
     background-color: #F9FBF7;
 }
 .bouton, .bouton p, .carte{
@@ -39,61 +39,32 @@ header h1, footer h3{
 header h1, .localisation h2, footer h3{
     line-height: 50px;
 }
+.description, .restaurants{
+    background-color: #EEEEEE;
+}
+.photo, .far{
+    position: relative;
+}
 
-
-
+/*COMMANDES SPECIFIQUES*/
 body{
-	/*display: flex;*/
 	flex-direction: column;
 	width: 375px;
 	margin: auto;
     font-family: 'robotoregular', Arial, Helvetica, sans-serif;
 }
-header h1{
-    /*line-height: 50px;*/
-	/*height: 60px;*/
-	/*text-align: center;*/
-    /*background-color: #F9FBF7;*/
-    /*margin: 0;*/
-	/*font-family: 'Shrikhand', 'robotoregular', Arial, Helvetica, sans-serif;*/
-}
-
 .localisation{
-   /* position: relative;*/
-   /* bottom: 20px;
-    height: 60px;*/
-	/*text-align: center;*/
 	background-color: #E0E0E0;
 }
-.localisation h2{
-    /*margin: 0;*/
-    /*line-height: 50px;*/
-}
 .description{
-   /* position: relative;*/
-    /*bottom: 20px;*/
-	/*display: flex;
-	flex-direction: column;
-	justify-content: space-around;*/
 	height: 270px;
-	background-color: #EEEEEE;
-	/*text-align: center;*/
-    /*padding: 0 30px;*/
 }
 .description h2{
-   /* margin: 0;*/
     padding-top: 30px;
-}
-.bouton{
-   /* display: flex;*/
-    /*justify-content: center;*/
-    /*padding-bottom: 40px;*/
 }
 .bouton p{
     box-shadow: 4px 4px 4px #a09898;
-   /* display: flex;*/
     align-items: center;
-    /*justify-content: center;*/
     font-size: 0.9em;
     color: white;
     border-radius: 50px;
@@ -105,18 +76,13 @@ header h1{
     box-shadow: 4px 4px 4px #524949;
     background-image: linear-gradient(to bottom, #e8cdf1,#ca4bcc);
 }
-.selection{
-    /*position: relative;
-    bottom: 20px;*/
-	height: 440px;
-	/*background-color: #F9FBF7;*/
+.selection{ 
+	height: 440px;	
 }
 .selection h2{
-	/*margin: 0;*/
     padding: 50px 0px 0 20px;
 }
 .menu {
-	/*display: flex;*/
 	background-color: #ECEEEA;
     margin: 25px 25px;
     border-radius: 20px;
@@ -124,7 +90,6 @@ header h1{
 .menu p {
     position: relative;
     padding: 10px 0;
-    /*text-align: center;*/
 }
 .menu .fas{
 	padding: 0 25px 0 40px;
@@ -146,41 +111,28 @@ header h1{
     background-color: #9356DC;
     width: 26px;
     height: 26px;
-    /*text-align: center;*/
     line-height: 26px;
     left: -13px;
 }
 .carte{
-   /* display: flex;*/
     flex-wrap: wrap;
-    /*justify-content: center;*/
 }
 .restaurants{
-   /* position: relative;
-    bottom: 20px;*/	
 	height: 1225px;
-	background-color: #EEEEEE;
 }
 .restaurants h2{
-	/*margin: 0;*/
     padding: 40px 0 0 20px;
 }
 .photo{
     margin:20px;
-    position: relative;    
 }
 img{
 	border-radius: 15px 15px 0 0;
 }
-.photo a{
-	/*background-color: #f9fbf7;*/
-}
-.restaurants p{
+figcaption{
     width: 315px;
 	padding: 8px 0 0 15px;
     height: 50px;
-   /* background-color: #F9FBF7;*/
-   /* margin: 0;*/
     border-radius: 0 0 15px 15px;
 }
 .new{
@@ -192,11 +144,9 @@ img{
     position: absolute;
     padding: 3px 20px 3px 20px;
     top: 36px;
-    /*left: 67%;*/
     right: 30px;
 }
 .far{
-    position: relative;
     float: right;
     right: 30px;
     bottom: 16px;
@@ -206,23 +156,14 @@ img{
     font-weight: bold;
     color: #9356DC;
 }
-
 footer{
-    /*position: relative;
-    bottom: 20px;*/
     height: 180px;
     background-color: #414141;
     padding-left: 20px;
     color: #FFFFFF;
 }
 footer h3{
-    /*line-height: 50px;*/
-    /*margin: 0;*/
-    /*font-family: 'Shrikhand', 'robotoregular', Arial, Helvetica, sans-serif;*/
     font-weight: normal;
-}
-footer p{
-   /* margin: 0;*/
 }
 footer a{
     text-decoration: none;
@@ -230,7 +171,6 @@ footer a{
 }
 footer .fas{
     padding: 0 10px 0 0;
-   /* color: white;*/
 }
 .suggest{
     padding-left: 7px;
@@ -239,7 +179,7 @@ footer .fas{
 @media all and (min-width: 768px)
 {
 body, .menu{
-        width: 100%;
+    width: 100%;
 }
 .selection, .restaurants h2{
     text-align: center;
@@ -250,36 +190,7 @@ body, .menu{
 .selection h2, .restaurants h2{
     padding: 30px 0 0 0;
 }
-.selection{
-  /* display: flex;*/
-   /* text-align: center;*/
-  /*flex-direction: column;*/
-    /*height: 100%;*/
-}
-.selection h2{
-   /*padding: 30px 0 0 0;*/
-}
-.menu{
-   /* width: 100%;*/
-}
 .choixmenu{
     display: flex;
-    /*justify-content: center;*/
 }
-.restaurants{
-   /* height: 100%;*/
-}
-.restaurants h2{
-    /*text-align: center;*/
-   /* padding: 30px 0 0 0;*/
-}
-/*.restaurants p{
-   position: relative;
-    bottom: 5px;
-    width: calc( 100% - 15px );
-}*/
-/*.carte{
-    display: flex;
-    justify-content: center;
-}*/
 }

@@ -16,6 +16,9 @@
     font-weight: normal;
     font-style: normal;
 }
+/* COMMANDES GENERIQUES */
+
+
 body{
 	display: flex;
 	flex-direction: column;
@@ -25,7 +28,7 @@ body{
 }
 /* HEADER */
 header{
-	height: 60px;
+	/*height: 60px;*/
 	text-align: center;
 	background-color: #F9FBF7;
 }
@@ -41,19 +44,19 @@ header .fas{
 }
 header a{
     color: black;
-    text-decoration: none;
+    /*text-decoration: none;*/
+}
+img{
+    height: 250px;
+    width: 375px;
 }	
 .menu{
-    height: 100%;
+    /*height: 100%;*/
     background-color: #EEEEEE;
     border-radius: 40px 40px 0 0;
     position: relative;
     bottom: 45px;
     padding: 0 0 0 20px;
-}
-img{
-    height: 250px;
-    width: 375px;
 }
 h2{
     font-family: 'Shrikhand', 'robotoregular', Arial, Helvetica, sans-serif;
@@ -75,14 +78,14 @@ h2{
 /* COMPOSITION*/
 
 .responsive{
-    display: flex;
-    flex-direction: column;
+   /* display: flex;
+    flex-direction: column;*/
 }
 .entree h3, .plats h3, .desserts h3{
     text-transform: uppercase;
     font-weight: normal;
     font-size: 0.9em;
-    margin: 0;
+   /* margin: 0;*/
     padding: 30px 0 0 0;
     width: 35px;
     border-bottom: solid 3px #99E2D0;
@@ -94,16 +97,6 @@ h2{
     margin: 15px 0 0 0;
     overflow: hidden;
     box-shadow: 4px 4px 4px #a09898;
-}
-.menu h4, .menu p{
-    padding: 0 0 0 10px;
-}
-.menu h4{
-    margin: 10px 0 0 0;
-}
-.menu p{
-    margin-top: 0;
-    font-size: 0.9em;
 }
 .animation{
     display: flex;
@@ -123,6 +116,17 @@ h2{
     text-overflow: ellipsis;
     max-width: 150px;
 }
+.menu h4, .menu p{
+    padding: 0 0 0 10px;
+}
+.menu h4{
+    margin: 10px 0 0 0;
+}
+.menu p{
+    margin-top: 0;
+    font-size: 0.9em;
+}
+
 .bouton_vert{
   
     text-align: center;
