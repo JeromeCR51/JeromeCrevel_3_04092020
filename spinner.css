@@ -18,6 +18,7 @@
     border: 3px solid transparent;
     border-top-color: #3498db;
     -webkit-animation: spin 2s linear infinite;
+    -ms-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
     z-index: 1001;
 }
@@ -33,6 +34,7 @@
     border: 3px solid transparent;
     border-top-color: #e74c3c;
     -webkit-animation: spin 3s linear infinite;
+    -ms-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
 
@@ -47,6 +49,7 @@
     border: 3px solid transparent;
     border-top-color: #f9c922;
     -webkit-animation: spin 1.5s linear infinite;
+    -ms-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
 @-ms-keyframes spin {    /* Animation du spinner pour tout type de web */
@@ -62,27 +65,27 @@
 
 @-webkit-keyframes spin {    /* Animation du spinner pour tout type de web */
     0% { -webkit-transform: rotate(0deg); 
-         -moz-transform: rotate(0deg);
+         -ms-transform: rotate(0deg);
          transform: rotate(0deg);
     }
     100% { -webkit-transform: rotate(360deg); 
-           -moz-transform: rotate(360deg);
+           -ms-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
 @keyframes spin {
     0% { -webkit-transform: rotate(0deg); 
-         -moz-transform: rotate(0deg);
+         -ms-transform: rotate(0deg);
          transform: rotate(0deg);
     }
     100% { -webkit-transform: rotate(360deg); 
-           -moz-transform: rotate(360deg);
+           -ms-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
 .content{
     animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari et Chrome */
     -o-animation: fadein 3s; /* Opera */
 }
@@ -111,7 +114,7 @@
 }
 #loader-wrapper{
     animation: fadeout 3s;
-    -moz-animation: fadeout 3s; /* Firefox */
+    -ms-animation: fadeout 3s; /* Firefox */
     -webkit-animation: fadeout 3s; /* Safari et Chrome */
     -o-animation: fadeout 3s; /* Opera */  
     -webkit-transform: translateY(-100%);
