@@ -129,7 +129,7 @@
     /*-webkit-animation: fadeout 3s; /* Safari et Chrome */*/
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
-    z-index: 0;   
+    /*z-index: 0; */  
      -webkit-transition: all  0s 3s ease;
      -ms-transition: all  0s 3s ease;
               
