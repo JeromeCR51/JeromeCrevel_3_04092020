@@ -19,6 +19,7 @@
     border-top-color: #3498db;
     -webkit-animation: spin 2s linear infinite;
     -ms-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
     z-index: 1001;
 }
@@ -35,6 +36,7 @@
     border-top-color: #e74c3c;
     -webkit-animation: spin 3s linear infinite;
     -ms-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
 
@@ -50,7 +52,18 @@
     border-top-color: #f9c922;
     -webkit-animation: spin 1.5s linear infinite;
     -ms-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
+}
+@-ms-keyframes spin {    /* Animation du spinner pour tout type de web */
+    0% { -webkit-transform: rotate(0deg); 
+         -ms-transform: rotate(0deg);
+         transform: rotate(0deg);
+    }
+    100% { -webkit-transform: rotate(360deg); 
+           -ms-transform: rotate(360deg);
+           transform: rotate(360deg);
+    }
 }
 @-moz-keyframes spin {    /* Animation du spinner pour tout type de web */
     0% { -webkit-transform: rotate(0deg); 
@@ -123,6 +136,17 @@
         opacity:1;
     }
 }
+@-ms-keyframes fadein {
+    0% {
+        opacity:0;
+    }  
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+}
 #loader-wrapper{
     animation: fadeout 3s;
     -ms-animation: fadeout 3s; /* Firefox */
@@ -156,6 +180,14 @@
     }
 }
 @-moz-keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-ms-keyframes fadeout {
     from {
         opacity:1;
     }
