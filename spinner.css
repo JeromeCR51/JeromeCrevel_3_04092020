@@ -87,7 +87,6 @@
     animation: fadein 3s;
     -ms-animation: fadein 3s; /* Firefox */
     /*-webkit-animation: fadein 3s; /* Safari et Chrome */*/
-    -o-animation: fadein 3s; /* Opera */
 }
 @keyframes fadein {
     0% {
