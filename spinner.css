@@ -85,7 +85,7 @@
 }
 .content{
     animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
+    -ms-animation: fadein 3s; /* Firefox */
     /*-webkit-animation: fadein 3s; /* Safari et Chrome */*/
     -o-animation: fadein 3s; /* Opera */
 }
@@ -153,7 +153,7 @@
         opacity:0;
     }
 }
-@-ms-keyframes fadeout {
+@-moz-keyframes fadeout {
     from {
         opacity:1;
     }
