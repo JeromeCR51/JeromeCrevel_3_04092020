@@ -58,20 +58,24 @@
 @-ms-keyframes spin {    /* Animation du spinner pour tout type de web */
     0% { -webkit-transform: rotate(0deg); 
          -ms-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
          transform: rotate(0deg);
     }
     100% { -webkit-transform: rotate(360deg); 
            -ms-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
 @-moz-keyframes spin {    /* Animation du spinner pour tout type de web */
     0% { -webkit-transform: rotate(0deg); 
          -ms-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
          transform: rotate(0deg);
     }
     100% { -webkit-transform: rotate(360deg); 
            -ms-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
@@ -79,26 +83,31 @@
 @-webkit-keyframes spin {    /* Animation du spinner pour tout type de web */
     0% { -webkit-transform: rotate(0deg); 
          -ms-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
          transform: rotate(0deg);
     }
     100% { -webkit-transform: rotate(360deg); 
            -ms-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
 @keyframes spin {
     0% { -webkit-transform: rotate(0deg); 
          -ms-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
          transform: rotate(0deg);
     }
     100% { -webkit-transform: rotate(360deg); 
            -ms-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
 .content{
     animation: fadein 3s;
     -ms-animation: fadein 3s; /* Firefox */
+    -moz-animation: fadein 3s;
     -webkit-animation: fadein 3s; /* Safari et Chrome */
 }
 @keyframes fadein {
