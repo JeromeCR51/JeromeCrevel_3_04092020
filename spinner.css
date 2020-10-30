@@ -112,6 +112,18 @@
         opacity:1;
     }
 }
+
+@-ms-keyframes fadein {
+    0% {
+        opacity:0;
+    }  
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+}
 #loader-wrapper{
     animation: fadeout 3s;
     -ms-animation: fadeout 3s; /* Firefox */
@@ -124,6 +136,15 @@
 }
 
 @keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+
+@-ms-keyframes fadeout {
     from {
         opacity:1;
     }
