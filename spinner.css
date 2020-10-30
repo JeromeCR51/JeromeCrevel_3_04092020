@@ -34,7 +34,7 @@
     border: 3px solid transparent;
     border-top-color: #e74c3c;
    /* -webkit-animation: spin 3s linear infinite;*/
-    -moz-animation: spin 3s linear infinite;
+    -ms-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
 
@@ -49,7 +49,7 @@
     border: 3px solid transparent;
     border-top-color: #f9c922;
     /*-webkit-animation: spin 1.5s linear infinite;*/
-    -moz-animation: spin 1.5s linear infinite;
+    -ms-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
 @-moz-keyframes spin {    /* Animation du spinner pour tout type de web */
