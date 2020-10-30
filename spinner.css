@@ -129,7 +129,7 @@
     -ms-animation: fadeout 3s; /* Firefox */
     /*-webkit-animation: fadeout 3s; /* Safari et Chrome */*/
     -o-animation: fadeout 3s; /* Opera */ 
-    /*-webkit-transform: translateY(-100%);*/
+    -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     z-index: 0;   
      -webkit-transition: all  0s 3s ease;
