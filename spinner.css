@@ -130,7 +130,8 @@
     transform: translateY(100%);
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
-     -webkit-transition: all  0s 3s ease;
+    transition: all  0s 3s ease;
+    -webkit-transition: all  0s 3s ease;
      -ms-transition: all  0s 3s ease;
               
 }
