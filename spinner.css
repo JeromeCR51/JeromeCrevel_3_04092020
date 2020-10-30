@@ -49,7 +49,7 @@
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
-@-ms-keyframes spin {    /* Animation du spinner pour tout type de web */
+@-moz-keyframes spin {    /* Animation du spinner pour tout type de web */
     0% { -webkit-transform: rotate(0deg); 
          -ms-transform: rotate(0deg);
          transform: rotate(0deg);
@@ -62,21 +62,21 @@
 
 @-webkit-keyframes spin {    /* Animation du spinner pour tout type de web */
     0% { -webkit-transform: rotate(0deg); 
-         -ms-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
          transform: rotate(0deg);
     }
     100% { -webkit-transform: rotate(360deg); 
-           -ms-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
 @keyframes spin {
     0% { -webkit-transform: rotate(0deg); 
-         -ms-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
          transform: rotate(0deg);
     }
     100% { -webkit-transform: rotate(360deg); 
-           -ms-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
@@ -87,6 +87,18 @@
     -o-animation: fadein 3s; /* Opera */
 }
 @keyframes fadein {
+    0% {
+        opacity:0;
+    }  
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadein {
     0% {
         opacity:0;
     }  
@@ -109,6 +121,14 @@
 }
 
 @keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadeout {
     from {
         opacity:1;
     }
