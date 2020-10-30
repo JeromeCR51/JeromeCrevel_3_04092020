@@ -17,7 +17,7 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #3498db;
-    /*-webkit-animation: spin 2s linear infinite;*/
+    -webkit-animation: spin 2s linear infinite;
     -ms-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
     z-index: 1001;
@@ -33,7 +33,7 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #e74c3c;
-   /* -webkit-animation: spin 3s linear infinite;*/
+    -webkit-animation: spin 3s linear infinite;
     -ms-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -48,37 +48,37 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #f9c922;
-    /*-webkit-animation: spin 1.5s linear infinite;*/
+    -webkit-animation: spin 1.5s linear infinite;
     -ms-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
 @-moz-keyframes spin {    /* Animation du spinner pour tout type de web */
-    0% { /*-webkit-transform: rotate(0deg); */
+    0% { -webkit-transform: rotate(0deg); 
          -ms-transform: rotate(0deg);
          transform: rotate(0deg);
     }
-    100% { /*-webkit-transform: rotate(360deg); */
+    100% { -webkit-transform: rotate(360deg); 
            -ms-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
 
 @-webkit-keyframes spin {    /* Animation du spinner pour tout type de web */
-    0% { /*-webkit-transform: rotate(0deg); */
+    0% { -webkit-transform: rotate(0deg); 
          -ms-transform: rotate(0deg);
          transform: rotate(0deg);
     }
-    100% {/* -webkit-transform: rotate(360deg); */
+    100% { -webkit-transform: rotate(360deg); 
            -ms-transform: rotate(360deg);
            transform: rotate(360deg);
     }
 }
 @keyframes spin {
-    0% { /*-webkit-transform: rotate(0deg); */
+    0% { -webkit-transform: rotate(0deg); 
          -ms-transform: rotate(0deg);
          transform: rotate(0deg);
     }
-    100% { /*-webkit-transform: rotate(360deg); */
+    100% { -webkit-transform: rotate(360deg); 
            -ms-transform: rotate(360deg);
            transform: rotate(360deg);
     }
@@ -86,7 +86,7 @@
 .content{
     animation: fadein 3s;
     -ms-animation: fadein 3s; /* Firefox */
-    /*-webkit-animation: fadein 3s; /* Safari et Chrome */*/
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
 }
 @keyframes fadein {
     0% {
