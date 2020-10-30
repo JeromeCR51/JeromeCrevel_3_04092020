@@ -127,7 +127,7 @@
 #loader-wrapper{
     animation: fadeout 3s;
     -ms-animation: fadeout 3s; /* Firefox */
-    /*-webkit-animation: fadeout 3s; /* Safari et Chrome */*/
+    -webkit-animation: fadeout 3s; /* Safari et Chrome */
     /*-webkit-transform: translateY(-100%);*/
     -ms-transform: translateY(-100%);
     z-index: 0;   
