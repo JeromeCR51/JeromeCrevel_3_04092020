@@ -125,7 +125,7 @@
     }
 }
 #loader-wrapper{
-    animation: fadeout 3s;
+    /*animation: fadeout 3s;*/
     -ms-animation: fadeout 3s; /* Firefox */
     -webkit-animation: fadeout 3s; /* Safari et Chrome */
     -webkit-transform: translateY(-100%);
@@ -136,14 +136,14 @@
               
 }
 
-@keyframes fadeout {
+/*@keyframes fadeout {
     from {
         opacity:1;
     }
     to {
         opacity:0;
     }
-}
+}*/
 
 @-webkit-keyframes fadeout {
     from {
